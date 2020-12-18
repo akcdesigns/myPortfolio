@@ -8,6 +8,12 @@ body {
     display: grid;
 }
 
+.flex {
+    display: flex;
+}
+
+/* Header */
+
 header {
     grid-template-areas: "logo nav";
     border-bottom: 1px solid white;
@@ -32,4 +38,53 @@ header nav a {
     margin: 15px;
     padding: 20px;
     font-size: 2rem;
+}
+
+/* Info / About */
+
+.info {
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url('https://www.akcdesigns.co.uk/wp-content/uploads/2020/08/monitor-binary-binary-system-1307227.jpg');
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.5;
+    min-height: 80vh;
+}
+
+.about {
+    grid-column: 2 / span 2;
+    color: white;
+    align-self: center;
+    text-align: left;
+    background-color: black;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+.about h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.myImage {
+    width: 45%;
+    margin: 10px;
+}
+
+.myImage img {
+    width: 100%;
+}
+
+.mainInfo {
+    width: 45%;
+    color: white;
+    margin: 10px;
 }
